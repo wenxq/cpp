@@ -1,0 +1,180 @@
+(\./|\.\./|/etc/(passwd|shadow|group)|(c|d|e|f):\\)
+\b(net\s+user)\b$
+\bnet\s+user\b.* /add\b.*
+\bnet\s+localgroup\s.* /add
+\bnet\s+user\b.*/del
+\bnet\s+password\b.*
+^(pr\.exe|cmd\.exe|0308\.exe)$
+\bchmod\s+.*
+\bgcc\s+.*
+\b(nc\.exe|nc)\b.*\s+\-e\s+
+^4[0-9]{2}$
+^5[0-9]{2}$
+>\bparent directory\b</a>
+(?:<(?:TITLE>Index of.*?<H|title>Index of.*?<h)1>Index of|>\[转到父目录\]</[Aa]><br>|(?:TITLE>Directory Listing For)|title>Directory Listing For)
+<title>index of.*?<h1>index of
+(?:Microsoft OLE DB Provider for SQL Server(?:</font>.{1,20}?error '800(?:04005|40e31)'.{1,40}?Timeout expired| \(0x80040e31\)<br>Timeout expired<br>)|<h1>internal server error</h1>.*?<h2>part of the server has crashed or it has a configuration error\.</h2>|cannot connect to the server: timed out)
+\bCould not find server 'w+' in sysservers\. execute sp_addlinkedserver\b
+\bSyntax error converting the .* value .*? to a column of data type\b
+\[Microsoft\]\[ODBC 
+\berror '800a01b8'
+\bsupplied argument is not a valid MS SQL\b
+\bsupplied argument is not a valid ODBC\b
+\bMicrosoft OLE DB Provider for .{0,30} [eE]rror
+\bSQL Server does not exist or access denied\b
+\bMySQLSyntaxErrorException\b
+\bmysql\.jdbc\.exceptions\b
+\bsupplied argument is not a valid MySQL\b
+\bWarning: mysql_connect\(\):
+\bORA-\d{5}: 
+\bsupplied argument is not a valid Oracle\b
+\bmicrosoft jet database engine error '8
+<b>Version Information:</b>(?:&nbsp;|\s)Microsoft \.NET Framework Version:
+>error 'ASP\b
+<b>Version Information:</b>(?:&nbsp;|\s)ASP\.NET Version:
+\bA trappable error occurred in an external object\. The script cannot continue running\b
+\bMicrosoft VBScript runtime Error\b
+\bMicrosoft VBScript compilation \(0x8\b
+[Ee]rror[Mm]essage\.aspx?\?[Ee]rror\b
+\bADODB\.Command\b.{0,100}?\berror'
+\berror '800
+\bMicrosoft VBScript compilation error\b
+<b>Warning</b>.{0,100}?:.{0,1000}?\bon line\b
+\bphp version\b
+^(get|post|options|head)$
+\.(asa|asax|ascx|axd|backup|bak|bat|cdx|cer|cfg|cmd|com|config|conf|cs|csproj|csr|dat|db|dbf|dll|dos|htr|htw|ida|idc|idq|inc|ini|key|licx|lnk|log|mdb|old|pass|pdb|pol|printer|pwd|resources|resx|sql|sys|vb|vbs|vbproj|vsdisco|webinfo|xsd|xsx|sqlite|bac|save|sav|old2|bk|~bk|orig|lst|arc|tmp|temp|data|cfm)$
+\bcmd\.exe\b
+\bnet\.exe\b
+\b(tasklist|tasklist\.exe)\b
+\b(netstat|netstat\.exe)\b
+\b(query|query\.exe)\s+user\b
+\b(net|net\.exe)\s+localgroup\b
+\b(mstsc|mstsc\.exe)\s+/admin.*\b
+\b(ipconfig|ipconfig\.exe)\b
+\b(telnet|telnet\.exe)\b
+\blogoff\s+\d
+\b(lcx|lcx\.exe)\s+(-listen|-slave)\b
+(/etc/issue|/etc/.*release)\b
+\bchmod\b
+\b(gcc|g++)\s+.*\.c\b
+\b(/proc/version|uname|rpm\s+.*\bkernel|dmesg)\b
+(/etc/profile|/etc/bashrc|\bbash_profile|\bashrc|\bbash_logout)\b
+\b(ps\s+aux|ps\s+-ef|/etc/service)\b
+\b(ss\s+-.*|netstat\s+-.*)\b
+\b(ifconfig|ifconfig\s+eth\d|ip\s+a|ip\s+route|ip\s+link)\b
+http://
+(?:\b(?:\.(?:ht(?:access|passwd|group)|www_?acl)|global\.asa|httpd\.conf|boot\.ini)\b|/etc/)
+<\?(?!xml)
+[\n\r]\s*\b(?:to|b?cc)\b\s*:.*?@
+<!--\W*?#\W*?(?:e(?:cho|xec)|printenv|include|cmd)
+(?:\((?:\W*?(?:objectc(?:ategory|lass)|homedirectory|[gu]idnumber|cn)\b\W*?=|[^\w\x80-\xFF]*?[!&\|][^\w\x80-\xFF]*?\()|\)[^\w\x80-\xFF]*?\([^\w\x80-\xFF]*?[!&\|])
+\.(?:(?:jpe?|pn)g|gif|ico)$
+\.(?:(?:doc|pdf|txt|xls))$
+\.(?:(?:cs|j)s|html?)$
+\.(?:mp(?:e?g|3)|avi|flv|swf|wma)$
+^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?
+(^\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b)
+^HTTP/(0\.9|1\.[01])$
+(multipart/form-data|application/x-www-form-urlencoded|application/json|text/xml|application/xml|application/x-amf|image/png)
+.*(%0d%0a).*
+\b(grabber|cgichk|bsqlbf|sqlmap|nessus|arachni|metis|sql power injector|bilbo|absinthe|black widow|n-stealth|brutus|webtrends security analyzer|netsparker|python-httplib2|jaascois|pmafind|nsauditor|paros|dirbuster|pangolin|nmap nse|sqlninja|nikto|webinspect|grendel-scan|havij|w3af|hydra)\b
+\bacunetix/wvs\b
+\b(kenjin spider|autoemailspider|grub crawler|fastlwspider|atspider|searchbot admin@google|web downloader|backdoor|hanzoweb|webaltbot|contactbot|fantombrowser|faxobot)\b
+select.*from.*
+select\s+(is_srvrolemember|is_member)
+exec.*master.*dbo.*(sp_addlogin|sp_password|sp_addsrvrolemember|xp_cmdshell).*
+(@@version|user_name\(\)|db_name\(\)|select\s+system_user)
+\b(?:(?:create|drop)\s+table|insert\s+into)\s+cmd\b.*
+(database\(\)|mysql\.user).*
+union.*select
+(create\s+table|drop\s+table|insert\s+into|update\s+.*set|delete\s+from).*
+backup\s+database\s+.*
+group\s+by.*having\s+.*
+master\.dbo\.sp_addextendedproc\s+xp_cmdshell
+exec\s+sp_oacreate.*wscript\.shell.*
+order\s+by\d+
+exec.*master.*xp_regwrite.*
+exec\s+sp_password.*
+(/\*)
+xp_availablemedia
+xp_dirtree
+(varchar\(|nvarchar\()
+(and|or)\s+(\(?\d+\s*(=|>|<)\s*\d+|\(?['"]\w*['"]\s*(=|>|<)\s*['"]\w*).*
+(mid\(|substring\(|substr\()
+truncate\s+from\s+.*
+concat\(
+convert\(
+^\s*'$
+.*'\s+(\+|&)\s+'
+into\s+outfile.*
+waitfor\s+delay.*
+sleep\(\d{1,}\)
+(.+\.cfm)|(.+\.asmx)|(.+\.lasso)|(.+\.php)|(.+\.php[3 5])|(.+\.phtml)|(.+\.phtm)|(.+\.pwml)|(.+\.inc)|(.+\.php\..+)
+(.+\.asp)|(.+\.asa)|(.+\.cer)|(.+\.cdx)|(.+\.htr)|(.+\.aspx)
+((.+\.jsp)|(.+\.jspx)|(.+\.war)|(.+\.cgi)|(.+\.pl)|(.+\.py)|(.+\.stm)|(.+\.shtml))
+<%.*(eval|execute)?.+\brequest\(.+\).*%>
+<script\s+language=.*request\(.*\).*script>
+<%@\s+page\s+language=.*request\.item\[.*\].*%>
+<%@\s+page\s+language=[\s\S]+createinstance\(.*\).*%>
+<\?php[\s\S]*\$_post\[.*\][\s\S]*\?>
+<%.*java\.io\.fileoutputstream\(.*\).*%>
+\b(server\.)?createobject\(
+<%@\s+language\s*=\s*.*%>
+<%eval\b.*%>
+<\?php.*
+(\$_POST\[|\$_GET\[|\$_COOKIE\[|\$_REQUEST\[)
+<%@\s*page[\s\S]+%>
+<%@\s*webhandler[\s\S]+%>
+(eval\s*\(|base64_decode\s*\(|\$_post|request\*s\(|execute\s*\(|chr\s*\()
+onmousedown\s*=
+onmouseenter\s*=
+onmouseleave\s*=
+onmouseleave\s*=
+onscroll\s*=
+onfocusin\s*=
+onfocusout\s*=
+onbeforecopy\s*=
+onbeforcut\s*=
+oncontextmenu\s*=
+oncopy\s*=
+oncut\s*=
+ondrag\s*=
+ondragend\s*=
+ondragend\s*=
+onmouseleave\s*=
+ondragover\s*=
+ondragstart\*=
+ondrop\s*=
+onpaste\s*=
+onselectstart\s*=
+javascript:
+vbscript:
+document\s*\.\s*cookie
+alert\s*\(.*\)
+(< ?script.*>|</ ?script>)
+<.*src\s*=.*>
+<.*onload\s*=.*>
+<.*onerror\s*=.*>
+<.*expression\(.*\).*>
+onclick\s*=
+ondblclick\s*=
+onkeydown\s*=
+onkeypress\s*=
+onkeyup\s*=
+onmousemove\s*=
+onchange\s*=
+onmouseout\s*=
+onmouseover\s*=
+onmouseup\s*=
+onreset\s*=
+onresize\s*=
+onselect\s*=
+onsubmit\s*=
+onunload\s*=
+onabort\s*=
+\.innerhtml
+onfoucs\s*=
+window\.execscript
+<!(doctype|entity)
+(window\.name|document\.(cookie|location|write|stylesheets|body)|activexobject)
+(eval\s*\(.*\))
